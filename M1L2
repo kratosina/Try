@@ -1,0 +1,10 @@
+import random
+
+acak_pw = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+pw = input("masukkan panjang kata yang diinginkan : ")
+menyimpan_pw = ""
+
+for i in range(int(pw)) :
+    menyimpan_pw += random.choice(acak_pw)
+
+print(menyimpan_pw)
